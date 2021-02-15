@@ -10,7 +10,7 @@ app.use("/", express.static(__dirname + "/build"));
 app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
 
 mongoose.connect(
-  process.env.MONGODB_URL || "mongodb://localhost/react-shopping-cart-db  mongodb+srv://admin:Folklore3.@cuil.ivcjj.mongodb.net/cuil?retryWrites=true&w=majority",
+  process.env.MONGODB_URL || "mongodb://admin:Folklore3.@cuil.ivcjj.mongodb.net/cuil?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useCreateIndex: true,
